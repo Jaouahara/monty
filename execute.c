@@ -13,13 +13,11 @@ int execute(char *cont, stack_t **stack, unsigned int ct, FILE *file)
 			       {"push", fun_push}, {"pall", fun_pall}, {"pint", fun_pint},
 			       {"pop", fun_pop},
 			       {"swap", fun_swap},
-			       /**
-				* {"add", fun_add},
-				* {"nop", fun_nop},
-				* {"sub", fun_sub},
-				* {"div", fun_div},
-				* {"mul", fun_mul},
-				*/
+			       {"add", fun_add},
+			       {"nop", fun_nop},
+			       {"sub", fun_sub},
+			       {"div", fun_div},
+			       {"mul", fun_mul},
 			       {"queue", fun_queue},
 			       {"stack", fun_stack},
 			       {NULL, NULL}

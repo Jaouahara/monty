@@ -42,6 +42,7 @@ typedef struct globals
 	char  *arg;
 } global_t;
 
+
 /**
  * struct aug_s - represents an "augmented" data type
  * @arg:  pointer to a character array
@@ -82,4 +83,10 @@ void addnode(stack_t **head, int n);
 void fun_stack(stack_t **hd, unsigned int ct);
 void fun_pall(stack_t **hd, unsigned int ct);
 ssize_t getline(char **cont, size_t *size, FILE *file);
+void fun_add(stack_t **hd, unsigned int ct);
+void fun_nop(stack_t **hd, unsigned int ct);
+void fun_sub(stack_t **hd, unsigned int ct);
+void fun_div(stack_t **hd, unsigned int ct);
+void fun_mul(stack_t **hd, unsigned int ct);
+
 #endif
