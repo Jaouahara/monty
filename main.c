@@ -1,5 +1,5 @@
 #include "monty.h"
-
+aug_t aug = {NULL, NULL, NULL, 0};
 /**
 * main - function
 * @argc: number of arg
