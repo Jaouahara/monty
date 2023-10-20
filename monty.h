@@ -31,12 +31,6 @@ typedef struct stack_s
  * @currt: current line
  * @arg: the secod para
  * @head: dbl linked ls
- * @w: new_munber
- * @cont: content
- * @ct: counter
- * @hd: head
- * @aug: variabl
- * @bus: variabl bus
  */
 typedef struct globals
 {
@@ -48,6 +42,13 @@ typedef struct globals
 	char  *arg;
 } global_t;
 
+/**
+ * struct aug_s - represents an "augmented" data type
+ * @arg:  pointer to a character array
+ * @file: a file
+ * @content: pointer to a character array
+ * @lifi: integer representing a lifi value
+ */
 typedef struct aug_s
 {
 	char *arg;

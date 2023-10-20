@@ -1,9 +1,10 @@
 #include "monty.h"
 /**
-* execute - function - stack
+* execute - function stack
 * @ct: line_counter
 * @file: poiner to monty file
 * @cont: line content
+* @stack: line stack
 * Return: void
 */
 int execute(char *cont, stack_t **stack, unsigned int ct, FILE *file)
@@ -12,16 +13,13 @@ int execute(char *cont, stack_t **stack, unsigned int ct, FILE *file)
 			       {"push", fun_push}, {"pall", fun_pall}, {"pint", fun_pint},
 			       {"pop", fun_pop},
 			       {"swap", fun_swap},
-			       /*{"add", fun_add},
-			       {"nop", fun_nop},
-			       {"sub", fun_sub},
-			       {"div", fun_div},
-			       {"mul", fun_mul},
-			       {"mod", fun_mod},
-			       {"pchar", fun_pchar},
-			       {"pstr", fun_pstr},
-			       {"rotl", fun_rotl},
-			       {"rotr", fun_rotr},*/
+			       /**
+				* {"add", fun_add},
+				* {"nop", fun_nop},
+				* {"sub", fun_sub},
+				* {"div", fun_div},
+				* {"mul", fun_mul},
+				*/
 			       {"queue", fun_queue},
 			       {"stack", fun_stack},
 			       {NULL, NULL}
